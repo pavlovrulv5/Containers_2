@@ -1,4 +1,0 @@
-docker build . -t my-img:v0.1
-docker images
-docker run --name django -d -p 8080:8080 my-img:v0.1
-docker ps
