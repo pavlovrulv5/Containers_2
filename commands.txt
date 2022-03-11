@@ -1,0 +1,10 @@
+docker build . -t my-img:v0.1
+docker images
+docker run --name django -d -p 8080:8080 my-img:v0.1
+docker ps
+curl 0.0.0.0:8080
+docker exec -i 51c5abf907f5 /bin/bash
+docker ps
+docker container stop 51c5abf907f5
+docker rm 51c5abf907f5
+docker image rm 51c5abf907f5
